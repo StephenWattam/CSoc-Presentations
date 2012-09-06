@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Graphics="Microsoft.Xna.Framework.Graphics" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Models\p1_wedge.fbx</Source>
+      <Name>Models\p1_wedge</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Models\p1_wedge.xnb</Output>
+      <Time>2010-01-28T15:23:47.4850303+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\p1_wedge_0.xml</Key>
+        <Value>2010-01-28T15:46:04.515504+00:00</Value>
+      </Dependency>
+      <Request>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\textures\wedge_p1_diff_v1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Textures\wedge_p1_diff_v1.tga</Source>
+      <Name>Textures\wedge_p1_diff_v1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Textures\wedge_p1_diff_v1.xnb</Output>
+      <Time>2010-01-28T15:24:15.7146449+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\p1_wedge.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\p1_wedge_0.xml</Output>
+      <Time>2010-01-28T15:23:47.4850303+00:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\wedge_p1_diff_v1.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\textures\wedge_p1_diff_v1_0.xnb</Output>
+      <Time>2010-01-28T15:24:15.7146449+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Waves\engine_2.wav</Source>
+      <Name>Audio\Waves\engine_2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Audio\Waves\engine_2.xnb</Output>
+      <Time>2010-01-28T16:41:03.7722107+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Waves\hyperspace_activate.wav</Source>
+      <Name>Audio\Waves\hyperspace_activate</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Audio\Waves\hyperspace_activate.xnb</Output>
+      <Time>2010-01-28T16:41:03.7732108+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\asteroid1.x</Source>
+      <Name>Models\asteroid1</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Models\asteroid1.xnb</Output>
+      <Time>2010-01-28T18:29:02.8697939+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\asteroid1_0.xml</Key>
+        <Value>2010-01-28T18:33:19.6814827+00:00</Value>
+      </Dependency>
+      <Request>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\textures\asteroid1_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\asteroid1.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\asteroid1_0.xml</Output>
+      <Time>2010-01-28T18:29:02.8697939+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\asteroid1.tga</Source>
+      <Name>Textures\asteroid1</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Textures\asteroid1.xnb</Output>
+      <Time>2010-01-28T18:33:33.7102851+00:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\asteroid1.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\textures\asteroid1_0.xnb</Output>
+      <Time>2010-01-28T18:33:33.7102851+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\pea_proj.tga</Source>
+      <Name>Textures\pea_proj</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Textures\pea_proj.xnb</Output>
+      <Time>2010-01-31T16:06:12.9230947+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Waves\explosion2.wav</Source>
+      <Name>Audio\Waves\explosion2</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Audio\Waves\explosion2.xnb</Output>
+      <Time>2010-01-31T16:06:44.7569155+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Waves\explosion3.wav</Source>
+      <Name>Audio\Waves\explosion3</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Audio\Waves\explosion3.xnb</Output>
+      <Time>2010-01-31T16:06:44.7609157+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Audio\Waves\tx0_fire1.wav</Source>
+      <Name>Audio\Waves\tx0_fire1</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Audio\Waves\tx0_fire1.xnb</Output>
+      <Time>2010-01-31T16:06:44.7879173+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\pea_proj.x</Source>
+      <Name>Models\pea_proj</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Models\pea_proj.xnb</Output>
+      <Time>2010-01-31T16:06:01.1414208+00:00</Time>
+      <Dependency>
+        <Key>obj\x86\Debug\Models\pea_proj_0.xml</Key>
+        <Value>2010-01-31T16:20:19.5165171+00:00</Value>
+      </Dependency>
+      <Request>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\textures\pea_proj_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\pea_proj.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>obj\x86\Debug\Models\pea_proj_0.xml</Output>
+      <Time>2010-01-31T16:06:01.1414208+00:00</Time>
+    </Item>
+    <Item>
+      <Source>textures\pea_proj.tga</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Graphics:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\textures\pea_proj_0.xnb</Output>
+      <Time>2010-01-31T16:06:12.9230947+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\B1_stars.tga</Source>
+      <Name>Textures\B1_stars</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Textures\B1_stars.xnb</Output>
+      <Time>2010-01-31T23:54:35.3110524+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Kootenay.spritefont</Source>
+      <Name>Fonts\Kootenay</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\Fonts\Kootenay.xnb</Output>
+      <Time>2010-01-31T23:59:48.1859478+00:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\Content\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\Content\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Carl\Documents\Visual Studio 2008\Projects\Asteroids\Asteroids\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2009-05-28T01:16:14+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2009-05-28T01:16:06+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2009-05-28T01:16:16+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2009-05-28T01:16:26+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2009-05-28T01:16:12+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v3.1\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2009-05-28T01:16:06+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\3.1.0.0__6d5c3888ef60e27d\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2010-01-24T09:37:55.8640973+00:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

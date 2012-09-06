@@ -1,0 +1,81 @@
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    /* Layout */
+    height: 1.2em;
+    margin: 0;
+    line-height: 1em;
+    padding: 0.5em;
+    width: 100%;
+
+    /* Text */
+    font-family: georgia, times, serif;
+    text-shadow: 1px 1px 1px #777;
+    color: white;
+
+    /* Backgrounds */
+    background: #333333;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.01, #222),color-stop(0.99, #444));
+    background: -moz-linear-gradient(top,  #444,  #222);
+
+    /* Shadows */
+    -moz-box-shadow: 2px 2px 6px #999;
+    -webkit-box-shadow: 2px 2px 6px #999;
+}
+
+
+h1.topic{
+    font-size: small;
+}
+
+h2{
+    /* Layout */
+    height: 1.2em;
+    margin: 0;
+    line-height: 1em;
+    padding: 0.5em;
+    width: 100%;
+
+    /* Text */
+    font-family: georgia, times, serif;
+    text-shadow: 1px 1px 1px #777;
+    color: white;
+
+    /* Backgrounds */
+    background: #333333;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.01, #222),color-stop(0.99, #444));
+    background: -moz-linear-gradient(top,  #444,  #222);
+
+    /* Shadows */
+    -moz-box-shadow: 2px 2px 6px #999;
+    -webkit-box-shadow: 2px 2px 6px #999;
+}
+
+div#content{
+    background-image: -moz-linear-gradient(top,  #fff,  #eee);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+div#content div{
+    /*border: solid 1px red;*/
+    padding: 0.2em;
+    margin: 0.5em;
+    font-size: large;
+}
+
+
+ul.spaced li{
+    line-height: 2em;
+}
+
+img.centre{
+    text-align: center;
+    margin: 0 auto;
+}

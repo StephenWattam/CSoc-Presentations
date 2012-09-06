@@ -1,0 +1,11 @@
+Links
+-----
+
+.Google webcams
+* LiveCam: http://www.google.com/search?q=intitle%3a%22Live%2bView%2b%2f%2b-%2bAXIS%22%2b%7c%2binurl%3aview%2fview.shtml%5e
+* Tons more: http://www.mydigitallife.info/2006/11/27/hack-to-search-and-view-free-live-webcam-with-google-search/
+
+
+.Interesting Places
+* Phrack: http://www.phrack.org/
+

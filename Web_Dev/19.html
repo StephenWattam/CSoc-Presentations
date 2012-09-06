@@ -1,0 +1,52 @@
+<h1 class="topic">Modern Server-side Code</h1>
+<h2>Modern Model-driven dev.</h2>
+<div>
+<p>The world of web dev is infested with PHP programmers who do this:<p>
+
+<pre>
+I love ponies.  Hello &lt;?php print cookies.personName . ""?&gt;, it's nice to have you on my site.
+
+	<?php
+		$count = 0;
+		foreach($answers as $answer){
+			echo "<tr>";
+			echo "<td><img src=\"" . getPath() . "images/" . $count;
+			if(!isset($_GET['done']))
+				echo "h";
+			echo ".jpg\" alt=\"Question\"/></td><td>";
+ 
+ 
+			if(!isset($_GET['done'])){
+				echo "&lt;input type=\"radio\" name=\"sel" . $count . "\" . value=\"Dix\"/> Alan Dix<br/>";
+				echo "&lt;input type=\"radio\" name=\"sel" . $count . "\" . value=\"Cox\"/> Alan Cox<br/>";
+			}else{
+				if(isset($_GET['sel' . $count])){
+					echo "<img src=\"" . getPath() . "images/";
+					if($answers[$count] == $_GET['sel' . $count]){
+						echo "right.png";
+						$score++;
+					}else
+						echo "wrong.png";
+					echo "\" alt=\"Wrong\" /></td><td>";
+					echo "Your selection: <strong>";
+					echo $_GET['sel' . $count];
+					echo "</strong>";
+				}else{
+					echo "</td><td>You didn't select anything!";
+				}
+ 
+			}
+ 
+			echo "</td></tr>";
+			$count++;			
+		}
+ 
+	?>
+</pre>
+
+</div>
+
+
+
+
+

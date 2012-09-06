@@ -1,0 +1,245 @@
+\documentclass[10pt]{article}
+
+%AMSLaTeX packages
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% we want to use images
+\usepackage{graphicx}
+\usepackage{alltt}
+\usepackage{verbatim}
+\usepackage{multicol}
+\usepackage{tabularx}
+\usepackage{a4wide}
+
+\title{C Cheatsheet}
+\author{Carl Ellis}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document will cover the fundamentals of a C program, including stucture and commonly used library functions.
+\end{abstract}
+
+\section{Program Structure}
+This section will describe the structure of a C program.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |l|X| }
+      \hline
+      Function prototype  & \texttt{type func($\text{arg}_1$, ...);} \\ \hline
+
+      Function structure  & \texttt{type func($\text{arg}_1$, ...) \{ } \\
+                          & ~ \textit{declarations} \\
+                          & ~ \textit{statements} \\
+                          & ~ \texttt{return value;} \\
+                          & \} \\ \hline
+
+      Main function       & \texttt{int main(int argc, char *argv[]) \{} \\
+      (Program Entry)     & ~ \textit{declarations} \\
+  (argv =  cmdline args)  & ~ \textit{statements} \\
+  (argc = no. of args)    & ~ \texttt{return 0;} \\
+                          & \} \\ \hline
+      C file structure    & \textit{preprocessor declarations} \\
+      (Program Entry)     & \textit{declarations} \\
+                          & \textit{functions} \\ \hline
+    \end{tabularx}
+\end{center}
+
+\section{Pre Processor Commands}
+This section will describe the commands passed to the preprocessor.
+These are processed at compile time, and describe static changes to the program. 
+This is mostly syntactic sugar.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |l|X| }
+      \hline
+      Include a library file  & \texttt{\#include <}\textit{filename}\texttt{>} \\ \hline
+      Include a user file     & \texttt{\#include \"}\textit{filename}\texttt{\"} \\ \hline
+      Define a constant       & \texttt{\#define} \textit{name} \textit{value} \\ \hline
+      Constant defined?       & \texttt{\#ifdef} \\
+      not defined?            & \texttt{\#ifndef} \\ \hline
+      Conditional execution   & \texttt{\#if}, \texttt{\#else}, \texttt{\#elif}, \texttt{\#endif} \\ \hline
+    \end{tabularx}
+\end{center}
+
+\section{Data types}
+This section will describe the data types supported by C. 
+All variables must have a type associated with it, as this defines the memory allocation policy.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |l|X| }
+      \hline
+      No type                   & \texttt{void} \\ \hline
+      Character (1 byte)        & \texttt{char} \\ \hline
+      Short integer (2 bytes)   & \texttt{short} \\ \hline
+      Integer (4 bytes)         & \texttt{int} \\ \hline
+      Long integer (8 bytes)    & \texttt{long} \\ \hline
+      Positive or negative      & \texttt{signed} \\ \hline
+      Positive only             & \texttt{unsigned} \\ \hline
+      Real number               & \texttt{float} \\
+      Double Precision          & \texttt{double} \\ \hline
+      Pointer to a type         & \textit{type}\texttt{*} \\ \hline
+      Easy Structure            & \texttt{typdef struct \{} \\ 
+      (Contains many types)     & ~ \texttt{type} \textit{name} \texttt{;} \\ 
+                                & ~ \texttt{...} \\ 
+                                & \texttt{ \}} \textit{name} \texttt{;} \\ \hline
+    \end{tabularx}
+\end{center}
+
+\section{Operators}
+Operators are syntactic sugar which allows simple functions to be called by used a few characters.
+Operators can be thought of as functions which take arguments from either side of the function call.
+So \texttt{x f y} can be thought of as \texttt{f(x, y)}.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |l|X| }
+      \hline
+      Comment                   & \texttt{/*}\textit{comment}\texttt{*/}, \texttt{//}\textit{comment} \\ \hline
+      Assignment                & \texttt{=} \\ \hline
+      Structure member access   & \texttt{struct.member} \\
+                                & \texttt{structptr->member} \\ \hline
+      Increment, decrement      & \texttt{++}, \texttt{--} \\ \hline
+      Arithmetic operators      & \texttt{+} \\ 
+\textit{Plus, minus, multiply}  & \texttt{-} \\ 
+\textit{divide, modulus}        & \texttt{*} \\ 
+                                & \texttt{/} \\ 
+                                & \texttt{\%} \\ \hline
+      Relational Comparisons    & \texttt{<} \\ 
+                                & \texttt{<=} \\ 
+                                & \texttt{>=} \\ 
+                                & \texttt{>} \\ \hline
+      Equality Comparisons      & \texttt{==} \\ 
+                                & \texttt{!=} \\ \hline
+      Logical Comparisons       & \texttt{\&\&} \\ 
+\textit{And, or, not}           & \texttt{||} \\
+                                & \texttt{!} \\ \hline
+      Bitwise Comparisons       & \texttt{\&} \\ 
+\textit{And, or, xor, not}      & \texttt{|} \\
+                                & \texttt{\^} \\
+                                & \texttt{\~} \\ \hline
+      Bitwise Operators         & \texttt{<<} \\ 
+      \textit{Bit shifts}       & \texttt{>>} \\ \hline
+      Dereference pointer       & \texttt{*}\textit{ptr} \\ \hline
+      Address of variable       & \texttt{\&}\textit{name} \\ \hline
+      Size of variable          & \texttt{sizeof} \textit{name} \\ \hline
+      Array access              & \texttt{array[}\textit{index}\texttt{]} \\ \hline
+      Type cast                 & \texttt{(type)}\textit{name}\\ \hline
+    \end{tabularx}
+\end{center}
+
+\section{Control Structures}
+Control structures are what the programmer uses to bend reality unto their will.
+Control flow is a matter of conditional and unconditional jumps.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |l|X| }
+      \hline
+      Call a function           & \texttt{functionname(}\textit{parameters}\texttt{);} \\ \hline
+      Conditional- \textit{if}  & \texttt{if (}\textit{$\text{expression}_1$}\texttt{) \{} \\ 
+                                & ~\textit{$\text{statement}_1$} \\ 
+                                & \texttt{else if (}\textit{$\text{expression}_2$}\texttt{) \{} \\ 
+                                & ~\textit{$\text{statement}_2$} \\ 
+                                & \texttt{else \{} \\ 
+                                & ~\textit{$\text{statement}_3$} \\ 
+                                & \texttt{\}} \\ \hline
+  Conditional- \textit{switch}  & \texttt{switch (}\textit{expression}\texttt{) \{} \\ 
+                                & ~\texttt{case }\textit{$\text{const}_1$}\texttt{:}\textit{$\text{statement}_1$}\texttt{ break;} \\ 
+                                & ~\texttt{case }\textit{$\text{const}_2$}\texttt{:}\textit{$\text{statement}_2$}\texttt{ break;} \\ 
+                                & ~\texttt{default: }\textit{statement}\\ 
+                                & \texttt{\}} \\ \hline
+      Iterator - \textit{while} & \texttt{while (}\textit{expression}\texttt{) \{} \\ 
+                                & ~\textit{statement} \\ 
+                                & \texttt{\}} \\ \hline
+      Iterator - \textit{do}    & \texttt{do \{} \\ 
+                                & ~\textit{statement} \\ 
+                                & \texttt{\} while (}\textit{expression}\texttt{);} \\ \hline 
+      Iterator - \textit{for}   & \texttt{for (}\textit{init}\texttt{;}\texttt{condition}\texttt{;}\textit{incr}\texttt{) \{} \\ 
+                                & ~\textit{statement} \\ 
+                                & \texttt{\}} \\ \hline
+    \end{tabularx}
+\end{center}
+
+\section{Common functions}
+This are functions which you will use a lot, normally part of one of the system libraries.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |l|X| }
+      \hline
+      Allocate memory on the heap   & \texttt{void * malloc(int size);} \\ \hline
+      Free memory                   & \texttt{void free(void * name} \\ \hline
+      Print to STDOUT               & \texttt{printf(}\textit{format\_string}\texttt{, $\text{arg}_1$, ...);} \\ 
+      Format string uses key        & \%d - int, \%c - character \\ 
+      substitution to print         & \%s - string \\ 
+      variables by type.            & \textit{(see example code)} \\ \hline
+    \end{tabularx}
+\end{center}
+
+\section{Example}
+Here is an example program, which calls a function dependent upon the command line arguments given.
+
+\begin{center}
+    \begin{tabularx}{\columnwidth}{@{\extracolsep{\fill}} |X| }
+      \hline
+\begin{alltt}
+\#include<stdlib.h> 
+
+\#include<stdio.h>
+
+
+/* Function Prototypes */
+
+void print\_number(int number, char * arg);
+
+
+/* Functions */
+
+void print\_number(int number, char * arg)\{
+
+~  printf("The arg number is \%d, the arg is \%s \textbackslash n", number);
+
+\}
+
+
+/* Main function */
+
+int main(int argc, char * argv$[$ $]$) \{
+
+  
+~  /* Variables */
+
+~  int i;
+
+
+~  /* If not command line arguments given then exit */
+
+~  if ( argc == 1 ) \{
+
+~  ~ return 0;
+
+~  \}
+
+  
+~  /* loop the amount of arguments */
+
+~  for(i=0;i<argc;i++) \{
+
+~  ~  print\_number(i,argv$[$i$]$);
+
+~  \}
+
+
+~  return 0;
+
+\}
+
+\end{alltt}
+    \\  \hline
+    \end{tabularx}
+\end{center}
+
+\end{document}
+
